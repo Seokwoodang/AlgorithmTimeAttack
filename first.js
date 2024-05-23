@@ -14,7 +14,7 @@
 
 const first = (my_string)=>{
     let answer;
-    answer = my_string.split('_')
+    answer = my_string.split(' ')
     return answer
 }
 
