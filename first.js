@@ -11,7 +11,7 @@
 // "i_love_you" => ["i", "love", "you"]
 // "hello_world_this_is_snake_case" => ["hello", "world", "this", "is", "snake", "case"]
 
-const first = (my_string)=>{
+const solution = (my_string) => {
     let answer;
     return answer
 }
@@ -21,15 +21,15 @@ const runTests = () => {
         { my_string: "i_love_you", expected: ["i", "love", "you"] },
         { my_string: "programmers", expected: ["programmers"] },
         { my_string: "hello_world_this_is_snake_case", expected: ["hello", "world", "this", "is", "snake", "case"] },
-        { my_string:"a_b_c_d_e_f_g_h_i_j_k_l_m_n_o_p_q_r_s_t_u_v_w_x_y_z", expected:["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]}
+        { my_string: "a_b_c_d_e_f_g_h_i_j_k_l_m_n_o_p_q_r_s_t_u_v_w_x_y_z", expected: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] }
     ];
 
     testCases.forEach(({ my_string, expected }, index) => {
-        const result = first(my_string);
+        const result = solution(my_string);
         if (JSON.stringify(result) === JSON.stringify(expected)) {
-            console.log(`Test case ${index + 1} passed: first("${my_string}") === ${JSON.stringify(expected)}`);
+            console.log(`Test case ${index + 1} passed: solution("${my_string}") === ${JSON.stringify(expected)}`);
         } else {
-            console.error(`Test case ${index + 1} failed: first("${my_string}") === ${JSON.stringify(result)}, expected ${JSON.stringify(expected)}`);
+            console.error(`Test case ${index + 1} failed: solution("${my_string}") === ${JSON.stringify(result)}, expected ${JSON.stringify(expected)}`);
         }
     });
 };
