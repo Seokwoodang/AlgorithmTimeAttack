@@ -7,6 +7,7 @@
 // "dxccxbbbxaaaa" => ["d","cc","bbb","aaaa"]
 
 function solution(my_String) {
+    let sortedArray;
     return sortedArray;
 }
 
