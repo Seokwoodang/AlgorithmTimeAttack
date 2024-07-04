@@ -10,7 +10,7 @@
 // [4,3,2,1]	[3,2,1]
 // [10]	      [-1]
 
-function removeLargest(arr) {
+function solution(arr) {
   let answer;
 
   return answer;
@@ -31,7 +31,7 @@ function testRemoveLargest() {
   let allPassed = true;
 
   testCases.forEach((testCase, index) => {
-    const result = removeLargest(testCase.input);
+    const result = solution(testCase.input);
     const passed = JSON.stringify(result) === JSON.stringify(testCase.expected);
     console.log(
       `Test Case ${index + 1}: ${
