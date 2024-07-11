@@ -12,15 +12,8 @@
 // [5,8,4,0,6,7,9]	    6
 
 function findMissingNumbersSum(numbers) {
-  const allNumbers = new Set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
-  const numbersSet = new Set(numbers);
-
   let sum = 0;
-  for (let num of allNumbers) {
-    if (!numbersSet.has(num)) {
-      sum += num;
-    }
-  }
+
   return sum;
 }
 
